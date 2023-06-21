@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hoddie Clouds</title>
+    <link rel="icon" href="/img/cloud.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300&family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/head.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/presentacion.css">
+    <link rel="stylesheet" href="css/conteido.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/navegacion.css">
+    <link rel="stylesheet" href="css/scrollbar.css">
+    <link rel="stylesheet" href="css/modal-carrito.css">
+</head>
+<body>
+    <header class="head">
+        <div class="logo__nombre">
+            <img src="img/cloud.png" alt="Logo" class="logo">
+            <H2 class="nombre">Hoddie Clouds</H2>
+        </div>
+        <div class="botones">
+            <button class="boton1"><a href="logIn.html">Log In</a></button>
+            <button class="boton2"><a href="signUp.html">Sign Up</a></button>
+        </div>
+    </header>
+    <main>
+        <section class="presentacion">
+            <div class="presentacion__contenido">
+                    <div class="presentacion__contenido-texto">
+                        <h2 class="presentacion__titulo">¡Encuentra tu estilo!</h2>
+                        <p class="presentacion__texto">Aqui en Hoddie Clouds puedes encontrar el estilo que te cubrirá del frío y te hará lucir bien</p>
+                    </div>
+                <div class="presentacion__imagen">
+                    <img src="img/hoddie1.png" alt="Hoddieclouds" class="hoddie1">
+                </div>
+            </div>
+            <section class="navegacion">
+                <nav class="navegacion__barra">
+                    <ul class="list">
+                        <li class="navegacion__links"><a href="#">Cuenta</a></li>
+                        <li class="navegacion__links"><a href="#">Sobre nosotros</a></li>
+                        <li class="nav__carrito"><a href="#">Carrito</a></li>
+                    </ul>
+                </nav>
+            </section>
+        </section>
+        <section class="contenido">
+            <div class="contenido__titulo">
+                <h2 class="titulo">¡Consigue la tuya!</h2>
+            </div>
+            <div class="contenedor__tarjetas">
+                <div class="tarjetas">
+                    <img src="img/hoddie1.png" alt="Essentials" class="producto">
+                    <p class="descripcion">Oversized Best Quality Essentials Sweatshirt Hip Hop Streetwear Cotton Pullover</p>
+                    <p class="precio">$ 120.99 USD</p>
+                    <div class="boton__add">
+                        <button class="add__carrito">Agregar al carrito</button>
+                    </div>
+                </div>
+                <div class="tarjetas">
+                    <img src="img/hoddie2.png" alt="Broocklyn" class="producto">
+                    <p class="descripcion">BROOKLYN NEW YORK</p>
+                    <p class="precio">$ 80.99 USD</p>
+                    <div class="boton__add">
+                        <button class="add__carrito">Agregar al carrito</button>
+                    </div>
+                </div>
+                <div class="tarjetas">
+                    <img src="img/hoddie3.png" alt="GURUNVANI" class="producto">
+                    <p class="descripcion">GURUNVANI Contrast Color Pullover Hoddie Mens Patchwork Hoddies Men</p>
+                    <p class="precio">$ 189.99 USD</p>
+                    <div class="boton__add">
+                        <button class="add__carrito">Agregar al carrito</button>
+                    </div>
+                </div>
+                <div class="tarjetas">
+                    <img src="img/hoddie4.png" alt="Essentials" class="producto">
+                    <p class="descripcion">Mens Cartoon Cat Graphic Kangaroo Pocket Drawstring Hoddies</p>
+                    <p class="precio">$ 159.99 USD</p>
+                    <div class="boton__add">
+                        <button class="add__carrito">Agregar al carrito</button>
+                    </div>
+                </div>
+                <div class="tarjetas">
+                    <img src="img/hoddie5.png" alt="Essentials" class="producto">
+                    <p class="descripcion">Fleece Hoddie</p>
+                    <p class="precio">$ 89.99 USD</p>
+                    <div class="boton__add">
+                        <button class="add__carrito">Agregar al carrito</button>
+                    </div>
+                </div>
+                <div class="tarjetas">
+                    <img src="img/hoddie6.png" alt="Essentials" class="producto">
+                    <p class="descripcion">A BETTER MISTAKE Graphic-print-double-sleeve hoddie-Purple</p>
+                    <p class="precio">$ 200.00 USD</p>
+                    <div class="boton__add">
+                        <button class="add__carrito">Agregar al carrito</button>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+    </main>
+    <footer class="pie">
+            <img src="img/cloud.png" alt="Logo" class="logo__pie">
+            <H2 class="nombre__pie">Hoddie Clouds &copy;</H2>
+    </footer>
+
+    <div id="carritoModal" class="modal">
+        <div class="modal__content">
+            <h3 class="titulo__modal">Tu carrito de compras</h3>
+        <div id="carritoProductos" class="carrito__productos"></div>
+        <div class="total__carrito">
+            <div id="carritoTotal" class="carrito__total"></div>
+            <button class="total__boton">Comprar</button>
+        </div>
+           <div class="botones__modal">
+            <button class="cerrarCarrito__boton" id="cerrarCarrito">Cerrar</button>
+            <button class="limpiarCarrito__boton" id="limpiarCarrito">Limpiar</button>
+           </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

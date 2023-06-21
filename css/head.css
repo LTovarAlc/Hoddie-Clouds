@@ -1,0 +1,124 @@
+.head{
+    font-family: 'Kanit', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo__nombre{
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.logo{
+    height: 3rem;
+    margin-right: 7px;
+    margin-left: 10px;
+    padding: 3px;
+}
+
+.nombre{
+    font-size: 16px;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.botones{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin-right: 5px;
+}
+
+.boton__carrito{
+    display: none;
+}
+
+
+.boton1{
+    height: 30px;
+    width: 90px;
+    background-color: rgb(213, 213, 252);
+    color: black;
+    font-size: 14px;
+    border-radius: 15px;
+    border: none;
+
+    margin-bottom: 10px;
+}
+
+.boton2{
+    height: 30px;
+    width: 90px;
+    background-color: rgb(213, 213, 252);
+    color: black;
+    font-size: 14px;
+    border-radius: 15px;
+    border: none;
+    margin-bottom: 5px;
+}
+
+.boton1:hover{
+    background-color: rgb(166, 166, 255);
+    cursor: pointer;
+}
+
+.boton2:hover{
+    background-color: rgb(166, 166, 255);
+    cursor: pointer;
+}
+
+@media (min-width: 481px) and (max-width: 1024px){
+    .botones{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .boton1{
+        margin-bottom: 0;
+        margin-right: 5px;
+    }
+
+    .boton2{
+        margin-bottom: 0;
+    }
+}
+
+@media (min-width: 1024px){
+    .logo__nombre{
+        margin-left: 30px;
+    }
+
+    .nombre{
+        font-size: 28px;
+    }
+
+    .logo{
+        height: 5rem;
+    }
+
+    .botones{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .boton1{
+        font-size: 18px;
+        height: 50px;
+        width: 120px;
+        margin-right: 10px;
+        margin-bottom: 0;
+    }
+
+    .boton2{
+        font-size: 18px;
+        height: 50px;
+        width: 120px;
+        margin-bottom: 0;
+    }
+}

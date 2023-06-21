@@ -1,0 +1,130 @@
+.modal{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal__content{
+    background-color: #f0f0f0;
+    text-align: center;
+    font-family: 'Kanit', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    margin: 15% auto;
+    padding: 20px;
+    border: 3px solid #888;
+    border-radius: 10px;
+    width: 60%;
+}
+
+.titulo__modal{
+    font-size: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.botones__modal{
+    width: 100%;
+}
+
+.cerrarCarrito__boton{
+    height: 30px;
+    width: 100px;
+    border: none;
+    background-color: #cac9c9;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2);
+    margin-right: 20px;
+}
+
+.limpiarCarrito__boton{
+    height: 30px;
+    width: 100px;
+    border: none;
+    background-color: #cac9c9;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2);
+    margin-left: 20px;
+}
+
+.limpiarCarrito__boton:hover{
+    background-color: #888;
+    cursor: pointer;
+}
+
+.cerrarCarrito__boton:hover{
+    background-color: #888;
+    cursor: pointer;
+}
+
+.carrito__productos{
+    font-size: 14px;
+    margin: 30px;
+    text-align: left;
+    padding: 5px;
+    box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2);
+}
+
+.carrito__total{
+    font-weight: bold;
+}
+
+.total__carrito{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.total__boton{
+    height: 30px;
+    width: 100px;
+    border: none;
+    background-color: #cac9c9;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2);
+    margin-left: 50px;
+}
+
+.total__boton:hover{
+    background-color: #888;
+    cursor: pointer;
+}
+
+
+@media  screen and (max-width:412px) {
+    .limpiarCarrito__boton{
+        width: 80px;
+    }
+
+    .cerrarCarrito__boton{
+        width: 80px;
+    }
+
+    .total__boton{
+        width: 90px;
+        margin-left: 20px;
+    }
+}
+
+@media  screen and (min-width:0) {
+    .limpiarCarrito__boton{
+        width: 70px;
+    }
+
+    .cerrarCarrito__boton{
+        width: 70px;
+    }
+
+    .total__boton{
+        width: 90px;
+        margin-left: 20px;
+    }
+}

@@ -1,0 +1,38 @@
+.navegacion{
+    font-family: 'Kanit', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.navegacion__barra{
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    background-color: #f0f0f0;
+}
+
+.list{
+    display: flex;
+    align-items: center;
+    padding: 5px;
+}
+
+.navegacion__links{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.nav__carrito{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.navegacion__links:hover{
+    cursor: pointer;
+}
+
+@media (min-width: 1024px){
+    .navegacion__links{
+        font-size: 16px;
+    }
+    
+}
